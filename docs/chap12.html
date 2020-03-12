@@ -1,0 +1,649 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>基于Java SDK实现合约交易 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    编译部署
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="chap1.html">
+            
+                <a href="chap1.html">
+            
+                    
+                    编译与测试网络部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="chap2.html">
+            
+                <a href="chap2.html">
+            
+                    
+                    网络生成配置说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="chap3.html">
+            
+                <a href="chap3.html">
+            
+                    
+                    启动网络脚本配置剖析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    通道实践
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="chap4.html">
+            
+                <a href="chap4.html">
+            
+                    
+                    创建加入通道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="chap5.html">
+            
+                <a href="chap5.html">
+            
+                    
+                    更新通道配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="chap6.html">
+            
+                <a href="chap6.html">
+            
+                    
+                    动态添加组织
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    合约实践
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="chap7.html">
+            
+                <a href="chap7.html">
+            
+                    
+                    安装发布智能合约
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="chap8.html">
+            
+                <a href="chap8.html">
+            
+                    
+                    升级智能合约
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="chap9.html">
+            
+                <a href="chap9.html">
+            
+                    
+                    智能合约设置背书策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="chap10.html">
+            
+                <a href="chap10.html">
+            
+                    
+                    调试go智能合约
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="chap11.html">
+            
+                <a href="chap11.html">
+            
+                    
+                    外部构建启动合约
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    SDK实践
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="chap12.html">
+            
+                <a href="chap12.html">
+            
+                    
+                    基于Java SDK实现合约交易
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >基于Java SDK实现合约交易</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x6839;&#x636E;&#x524D;&#x9762;&#x7684;&#x6B65;&#x9AA4;&#xFF0C;&#x6211;&#x4EEC;&#x57FA;&#x4E8E;cli&#x5BA2;&#x6237;&#x7AEF;&#x5B8C;&#x6210;&#x4E86;&#x4E00;&#x7CFB;&#x5217;&#x64CD;&#x4F5C;&#xFF0C;&#x4F46;&#x662F;&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x5DE5;&#x7A0B;&#x4E00;&#x822C;&#x4F1A;&#x4F7F;&#x7528;SDK&#x53BB;&#x8C03;&#x7528;
+&#x7F51;&#x7EDC;&#x5B8C;&#x6210;&#x4EA4;&#x6613;&#xFF0C;&#x56E0;&#x6B64;&#x4ECE;&#x8FD9;&#x4E00;&#x7AE0;&#x5F00;&#x59CB;&#x5B9E;&#x8DF5;&#x4F55;&#x57FA;&#x4E8E;Java SDK&#x8C03;&#x7528;Fabric2.0&#x7F51;&#x7EDC;&#x5B8C;&#x6210;&#x4EA4;&#x6613;&#x3002;</p>
+<h2 id="1gateway">1.Gateway</h2>
+<p>&#x5728;&#x8FDB;&#x884C;&#x5B9E;&#x8DF5;&#x524D;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x6BD4;&#x8F83;&#x65B0;&#x7684;&#x6982;&#x5FF5;&#x9700;&#x8981;&#x4E86;&#x89E3;&#x5C31;&#x662F;Gateway&#x3002;
+&#x4E3A;&#x4E86;&#x5E94;&#x5BF9;&#x7531;&#x4E8E;Fabric&#x7F51;&#x7EDC;&#x4E2D;&#x7684;&#x53D8;&#x5316;&#x9891;&#x7E41;&#x6240;&#x9020;&#x6210;&#x7684;&#x540E;&#x679C;&#xFF0C;Fabric2.0 &#x539F;&#x672C;&#x7684;SDK&#x4E4B;&#x4E0A;&#x76D6;&#x4E86;&#x4E00;&#x5C42;&#x7F51;&#x5173;Gateway&#xFF0C;&#x7528;&#x4E8E;&#x51CF;&#x8F7B;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x8D1F;&#x62C5;&#x3002;</p>
+<p>&#x5177;&#x4F53;&#x62D3;&#x6251;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;
+<img src="https://img-blog.csdnimg.cn/20200222214525147.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI4NTQwNDQz,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<p>MagnetoCorp&#x548C;DigiBank&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF08;&#x53D1;&#x884C;&#x548C;&#x8D2D;&#x4E70;&#xFF09;&#x5C06;&#x5404;&#x81EA;&#x7684;&#x7F51;&#x7EDC;&#x4EA4;&#x4E92;&#x59D4;&#x6258;&#x7ED9;&#x5176;&#x7F51;&#x5173;&#x3002;&#x6BCF;&#x4E2A;&#x7F51;&#x5173;&#x90FD;&#x4E86;&#x89E3;&#x7F51;&#x7EDC;&#x901A;&#x9053;&#x62D3;&#x6251;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x62EC;&#x4E24;&#x4E2A;&#x7EC4;&#x7EC7;MagnetoCorp&#x548C;DigiBank&#x7684;&#x591A;&#x4E2A;peers&#x548C;order&#xFF0C;&#x4F7F;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E13;&#x6CE8;&#x4E8E;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x3002;&#x8282;&#x70B9;&#x95F4;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;gossip&#x534F;&#x8BAE;&#x5728;&#x7EC4;&#x7EC7;&#x5185;&#x90E8;&#x548C;&#x7EC4;&#x7EC7;&#x4E4B;&#x95F4;&#x76F8;&#x4E92;&#x5171;&#x8BC6;&#x4EA4;&#x4E92;&#x3002;</p>
+<h2 id="2&#x73AF;&#x5883;&#x51C6;&#x5907;">2.&#x73AF;&#x5883;&#x51C6;&#x5907;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x7CFB;&#x7EDF;&#x5DE5;&#x5177;</th>
+<th>&#x7248;&#x672C;</th>
+<th>&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Window</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Fabric</td>
+<td>2.0</td>
+<td>&#x5DF2;&#x90E8;&#x7F72;&#x597D;mychannel&#x901A;&#x9053;&#x4EE5;&#x53CA;mycc&#x5408;&#x7EA6;&#x5230;&#x4E24;&#x4E2A;&#x7EC4;&#x7EC7;&#x8282;&#x70B9;</td>
+</tr>
+<tr>
+<td>Java</td>
+<td>1.8</td>
+</tr>
+<tr>
+<td>Maven</td>
+<td>3.5.2</td>
+</tr>
+</tbody>
+</table>
+<p>Fabric&#x7F51;&#x7EDC;&#x7ED3;&#x6784;
+|&#x8282;&#x70B9;&#x7C7B;&#x578B; |&#x8282;&#x70B9;&#x540D; |&#x6240;&#x5C5E;&#x7EC4;&#x7EC7;|ip  |&#x670D;&#x52A1;&#x7AEF;&#x53E3;
+|--|--|--|--|--|
+| orderer| orderer.example.com|-|192.168.2.104|7050
+| peer | peer0.org1.example.com |org1|192.168.2.104|7051
+| peer | peer1.org1.example.com |org1|192.168.2.104|8051
+| peer | peer0.org2.example.com |org2|192.168.2.104|9051
+| peer | peer1org2.example.com|org2|192.168.2.104|10051
+| ca | ca1.org1.example.com|org1|192.168.2.104|7054
+| ca | ca2.org1.example.com|org2|192.168.2.104|8054</p>
+<h2 id="3&#x521B;&#x5EFA;&#x57FA;&#x7840;&#x5DE5;&#x7A0B;">3.&#x521B;&#x5EFA;&#x57FA;&#x7840;&#x5DE5;&#x7A0B;</h2>
+<p>&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;Maven&#x5DE5;&#x7A0B;&#xFF0C;&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;&#x4F9D;&#x8D56;&#xFF1A;</p>
+<pre><code class="lang-java">&lt;dependency&gt;
+  &lt;groupId&gt;org.hyperledger.fabric&lt;/groupId&gt;
+  &lt;artifactId&gt;fabric-gateway-java&lt;/artifactId&gt;
+  &lt;version&gt;2.0.0&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+<h2 id="4&#x521B;&#x5EFA;connectionprofile">4.&#x521B;&#x5EFA;connectionProfile</h2>
+<p>connectionProfile&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8FDE;&#x63A5;&#x7F51;&#x7EDC;&#x5BF9;&#x8C61;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x8DD1;&#x8FC7;first-network&#x7684;&#x670B;&#x53CB;&#xFF0C;&#x76F8;&#x6BD4;&#x8BB0;&#x5F97;&#x4E00;&#x4E2A;ccp.sh&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x751F;&#x6210;&#x7684;connection-org1.json&#x3001;connection-org1.yaml&#x8FD9;&#x79CD;&#x6587;&#x4EF6;&#xFF0C;&#x5176;&#x5B9E;&#x8FD9;&#x4E9B;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x6240;&#x9700;&#x8981;&#x7684;connectionProfile&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x3002;&#x5F53;&#x7136;&#x4E5F;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x7F16;&#x5199;&#xFF0C;&#x81EA;&#x884C;&#x7F16;&#x5199;&#x8BF7;&#x53C2;&#x8003;<a href="https://hyperledger-fabric.readthedocs.io/en/release-2.0/developapps/connectionprofile.html" target="_blank">&#x5B98;&#x65B9;&#x6A21;&#x677F;</a></p>
+<h3 id="41-&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7ED3;&#x6784;&#x8BF4;&#x660E;">4.1 &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7ED3;&#x6784;&#x8BF4;&#x660E;</h3>
+<p>&#x6574;&#x4F53;connectionProfile&#x7ED3;&#x6784;&#x5982;&#x4E0B;
+<img src="https://img-blog.csdnimg.cn/20200222221024680.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI4NTQwNDQz,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;">
+&#x5305;&#x542B;&#x5BF9;&#x8C61;&#x8BF4;&#x660E;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;&#x540D;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>&#x81EA;&#x5B9A;&#x4E49;&#x7F51;&#x7EDC;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>version</td>
+<td>&#x81EA;&#x5B9A;&#x4E49;&#x7F51;&#x7EDC;&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td>client</td>
+<td>&#x5BA2;&#x6237;&#x7AEF;&#x76F8;&#x5173;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>channels</td>
+<td>&#x7F51;&#x7EDC;&#x6240;&#x5305;&#x542B;&#x7684;&#x901A;&#x9053;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>organizations</td>
+<td>&#x7F51;&#x7EDC;&#x4E2D;&#x7EC4;&#x7EC7;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>orderers</td>
+<td>&#x6392;&#x5E8F;&#x8282;&#x70B9;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>peer</td>
+<td>pee&#x8282;&#x70B9;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>certificateAuthorities</td>
+<td>ca&#x8282;&#x70B9;&#x4FE1;&#x606F;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="411-client">4.1.1 client</h4>
+<p><img src="https://img-blog.csdnimg.cn/20200222221711506.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI4NTQwNDQz,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<h4 id="412-channels">4.1.2 channels</h4>
+<p><img src="https://img-blog.csdnimg.cn/20200222221838973.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI4NTQwNDQz,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;">
+&#x5176;&#x4E2D;&#x8282;&#x70B9;&#x5BF9;&#x8C61;&#x6709;4&#x4E2D;&#x89D2;&#x8272;&#x5B9A;&#x4E49;
+|&#x89D2;&#x8272; |&#x63CF;&#x8FF0;|
+|--|--|
+|endorsingPeer| &#x5177;&#x6709;&#x80CC;&#x4E66;&#x6743;&#x9650;&#x8282;&#x70B9;
+|chaincodeQuery| &#x5177;&#x6709;&#x5408;&#x7EA6;&#x67E5;&#x8BE2;&#x6743;&#x9650;&#x8282;&#x70B9;
+|ledgerQuery|&#x5177;&#x6709;&#x8D26;&#x672C;&#x67E5;&#x8BE2;&#x6743;&#x9650;&#x8282;&#x70B9;
+|eventSource|  event hub&#x8282;&#x70B9;</p>
+<h4 id="413-organizations">4.1.3 organizations</h4>
+<p><img src="https://img-blog.csdnimg.cn/20200222222702232.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI4NTQwNDQz,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<p>&#x5176;&#x4E2D;admin&#x79C1;&#x94A5;&#x4E0E;admin&#x7B7E;&#x540D;&#x8BC1;&#x4E66;&#x652F;&#x6301;&#x8DEF;&#x5F84;&#x4E0E;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#xFF0C;&#x8DEF;&#x5F84;&#x4F7F;&#x7528;&#x53C2;&#x6570;<code>path</code>&#xFF0C;&#x5BF9;&#x5E94;&#x503C;&#x586B;&#x5199;&#x8DEF;&#x5F84;&#xFF0C;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x4F7F;&#x7528;&#x53C2;&#x6570;<code>pem</code>&#xFF0C;&#x5BF9;&#x5E94;&#x503C;&#x586B;&#x5199;&#x79C1;&#x94A5;&#x6216;&#x8005;&#x8BC1;&#x4E66;&#x5185;&#x5BB9;&#x3002;</p>
+<h4 id="414-orderers">4.1.4 orderers</h4>
+<p><img src="https://img-blog.csdnimg.cn/20200222223321769.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI4NTQwNDQz,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<h4 id="415-peer">4.1.5 peer</h4>
+<p>&#x4E0E;&#x6392;&#x5E8F;&#x8282;&#x70B9;&#x7C7B;&#x4F3C;&#xFF0C;&#x5982;&#x679C;&#x662F;tls&#x5FC5;&#x987B;&#x914D;&#x7F6E;tlsCACerts
+<img src="https://img-blog.csdnimg.cn/2020022222343458.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI4NTQwNDQz,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<h4 id="416-certificateauthorities">4.1.6 certificateAuthorities</h4>
+<p>&#x4E0E;&#x6392;&#x5E8F;&#x8282;&#x70B9;&#x7C7B;&#x4F3C;&#xFF0C;&#x5982;&#x679C;&#x662F;tls&#x5FC5;&#x987B;&#x914D;&#x7F6E;tlsCACerts</p>
+<p><img src="https://img-blog.csdnimg.cn/20200222223623958.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI4NTQwNDQz,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<h2 id="5-java&#x5DE5;&#x7A0B;&#x76EE;&#x5F55;&#x8BF4;&#x660E;">5. JAVA&#x5DE5;&#x7A0B;&#x76EE;&#x5F55;&#x8BF4;&#x660E;</h2>
+<p>&#x65B0;&#x5EFA;&#x7684;&#x5DE5;&#x7A0B;&#x76EE;&#x5F55;&#x5982;&#x4E0B;
+<img src="https://img-blog.csdnimg.cn/20200222223714865.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI4NTQwNDQz,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<pre><code>src/main/java &#xFF1A; &#x5B58;&#x653E;demo&#x4E3B;&#x7A0B;&#x5E8F;&#x7C7B;
+src/main/resources/connection.json &#xFF1A; &#x4E0A;&#x9762;&#x65B0;&#x5EFA;&#x597D;&#x7684;connectionProfile
+src/main/resources/crypto-config: &#x5B58;&#x653E;fabric&#x7F51;&#x7EDC;&#x8BC1;&#x4E66;&#x5185;&#x5BB9;(&#x9009;&#x62E9;&#x7528;&#x5230;&#x7684;&#x5C31;&#x884C;)
+</code></pre><h2 id="6-&#x5B9E;&#x8DF5;">6. &#x5B9E;&#x8DF5;</h2>
+<h3 id="61-&#x521B;&#x5EFA;&#x7F51;&#x5173;&#x8D26;&#x6237;">6.1 &#x521B;&#x5EFA;&#x7F51;&#x5173;&#x8D26;&#x6237;</h3>
+<p>&#x7F51;&#x5173;&#x8D26;&#x6237;&#x5C31;&#x662F;&#x76F8;&#x5F53;&#x4E8E;&#x8FDE;&#x63A5;fabric&#x7F51;&#x7EDC;&#x7684;fabric&#x7528;&#x6237;&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-java">          <span class="hljs-comment">//&#x4F7F;&#x7528;org1&#x4E2D;&#x7684;user1&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x7F51;&#x5173;wallet&#x8D26;&#x6237;&#x7528;&#x4E8E;&#x8FDE;&#x63A5;&#x7F51;&#x7EDC;</span>
+            Wallet wallet = Wallets.newInMemoryWallet();
+            Path certificatePath = credentialPath.resolve(Paths.get(<span class="hljs-string">&quot;signcerts&quot;</span>, <span class="hljs-string">&quot;User1@org1.example.com-cert.pem&quot;</span>));
+            certificate = readX509Certificate(certificatePath);
+
+            Path privateKeyPath = credentialPath.resolve(Paths.get(<span class="hljs-string">&quot;keystore&quot;</span>, <span class="hljs-string">&quot;priv_sk&quot;</span>));
+            privateKey = getPrivateKey(privateKeyPath);
+             <span class="hljs-comment">//&#x653E;&#x8FDB;wallet</span>
+            wallet.put(<span class="hljs-string">&quot;user&quot;</span>,Identities.newX509Identity(<span class="hljs-string">&quot;Org1MSP&quot;</span>,certificate,privateKey));
+</code></pre>
+<p>&#x8D26;&#x6237;&#x5BF9;&#x8C61;&#x90FD;&#x53EF;&#x4EE5;&#x5B58;&#x653E;&#x5230;wallet&#x91CC;&#x9762;&#xFF0C;&#x65B9;&#x4FBF;&#x5B58;&#x53D6;&#x3002;
+&#x8BC1;&#x4E66;&#x5BF9;&#x8C61;&#x4F7F;&#x7528;&#x7684;&#x662F;org1&#x7684;user&#x79C1;&#x94A5;&#xFF0C;&#x8BC1;&#x4E66;&#x3002;</p>
+<h3 id="62-&#x521B;&#x5EFA;&#x7F51;&#x5173;">6.2 &#x521B;&#x5EFA;&#x7F51;&#x5173;</h3>
+<p>&#x901A;&#x8FC7;connectionProfile&#x4EE5;&#x53CA;&#x7F51;&#x5173;&#x8D26;&#x6237;&#x521B;&#x5EFA;&#x7F51;&#x5173;</p>
+<pre><code class="lang-java">             <span class="hljs-comment">//&#x6839;&#x636E;connection-org1.json &#x83B7;&#x53D6;Fabric&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x5BF9;&#x8C61;</span>
+            GatewayImpl.Builder builder = (GatewayImpl.Builder) Gateway.createBuilder();
+
+            builder.identity(wallet, <span class="hljs-string">&quot;user&quot;</span>).networkConfig(NETWORK_CONFIG_PATH);
+</code></pre>
+<p><code>NETWORK_CONFIG_PATH &#xFF1A; connectionProfile&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</code></p>
+<h3 id="63-&#x8FDE;&#x63A5;&#x7F51;&#x5173;">6.3 &#x8FDE;&#x63A5;&#x7F51;&#x5173;</h3>
+<pre><code class="lang-java">           <span class="hljs-comment">//&#x8FDE;&#x63A5;&#x7F51;&#x5173;</span>
+            gateway = builder.connect();
+            <span class="hljs-comment">//&#x83B7;&#x53D6;mychannel&#x901A;&#x9053;</span>
+            Network network = gateway.getNetwork(<span class="hljs-string">&quot;mychannel&quot;</span>);
+            <span class="hljs-comment">//&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x5BF9;&#x8C61;</span>
+            Contract contract = network.getContract(<span class="hljs-string">&quot;mycc&quot;</span>);
+</code></pre>
+<p>&#x7F51;&#x5173;&#x8FDE;&#x63A5;&#x540E;
+<code>getNetwork</code>:&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x901A;&#x9053;&#x540D;&#x79F0;&#x83B7;&#x53D6;Fabric&#x5177;&#x4F53;&#x901A;&#x9053;&#x7F51;&#x7EDC;
+<code>network.getContract</code>&#xFF1A;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x5408;&#x7EA6;&#x540D;&#x79F0;&#x83B7;&#x53D6;&#x90E8;&#x7F72;&#x5230;&#x5BF9;&#x5E94;&#x901A;&#x9053;&#x7684;&#x667A;&#x80FD;&#x5408;&#x7EA6;&#x5BF9;&#x8C61;</p>
+<h3 id="64-&#x4EA4;&#x6613;">6.4 &#x4EA4;&#x6613;</h3>
+<p>&#x57FA;&#x4E8E;&#x4E0A;&#x4E00;&#x90E8;&#x5206;&#x7684;&#x667A;&#x80FD;&#x5408;&#x7EA6;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;addTen&#x7684;&#x4EA4;&#x6613;&#xFF0C;&#x7ED3;&#x679C;&#x662F;&#x5BF9;&#x8C61;&#x52A0;10</p>
+<p>&#x9996;&#x5148;&#x6211;&#x4EEC;&#x5BF9;&#x5408;&#x7EA6;&#x5BF9;&#x8C61;<code>a</code>&#x5F53;&#x524D;&#x7684;&#x503C;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;</p>
+<pre><code class="lang-java">      <span class="hljs-comment">//&#x67E5;&#x8BE2;&#x5408;&#x7EA6;&#x5BF9;&#x8C61;evaluateTransaction</span>
+            <span class="hljs-keyword">byte</span>[] queryAResultBefore = contract.evaluateTransaction(<span class="hljs-string">&quot;query&quot;</span>,<span class="hljs-string">&quot;a&quot;</span>);
+            System.out.println(<span class="hljs-string">&quot;&#x4EA4;&#x6613;&#x524D;&#xFF1A;&quot;</span>+<span class="hljs-keyword">new</span> String(queryAResultBefore, StandardCharsets.UTF_8));
+</code></pre>
+<p>&#x7136;&#x540E;&#x8C03;&#x7528;<code>addTen</code> &#x8FDB;&#x884C;a+10</p>
+<pre><code class="lang-java"> <span class="hljs-comment">// &#x521B;&#x5EFA;&#x5E76;&#x4E14;&#x63D0;&#x4EA4;&#x4EA4;&#x6613; </span>
+            <span class="hljs-keyword">byte</span>[] invokeResult = contract.createTransaction(<span class="hljs-string">&quot;addTen&quot;</span>)
+                    .setEndorsingPeers(network.getChannel().getPeers(EnumSet.of(Peer.PeerRole.ENDORSING_PEER)))
+                    .submit(<span class="hljs-string">&quot;a&quot;</span>);
+            System.out.println(<span class="hljs-keyword">new</span> String(invokeResult, StandardCharsets.UTF_8));
+
+            <span class="hljs-keyword">byte</span>[] invokeResult = contract.createTransaction(<span class="hljs-string">&quot;invoke&quot;</span>)
+                    .setEndorsingPeers(network.getChannel().getPeers(EnumSet.of(Peer.PeerRole.ENDORSING_PEER)))
+                    .submit(<span class="hljs-string">&quot;a&quot;</span>,<span class="hljs-string">&quot;b&quot;</span>,<span class="hljs-number">10</span>);
+            System.out.println(<span class="hljs-keyword">new</span> String(invokeResult, StandardCharsets.UTF_8));
+</code></pre>
+<p>&#x6B64;&#x5904;<code>setEndorsingPeers</code> &#x8BBE;&#x7F6E;&#x80CC;&#x4E66;&#x8282;&#x70B9;&#xFF0C;&#x8FD9;&#x91CC;&#x9009;&#x62E9;&#x4E86;&#x901A;&#x9053;&#x4E2D;&#x80CC;&#x4E66;&#x6743;&#x9650;&#x8282;&#x70B9;&#x96C6;&#x5408;</p>
+<p>&#x4EA4;&#x6613;&#x5B8C;&#x6210;&#x540E;&#x518D;&#x6B21;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;</p>
+<pre><code class="lang-java">  <span class="hljs-comment">//&#x67E5;&#x8BE2;&#x5408;&#x7EA6;&#x5BF9;&#x8C61;evaluateTransaction</span>
+            <span class="hljs-keyword">byte</span>[] queryAResultAfter = contract.evaluateTransaction(<span class="hljs-string">&quot;query&quot;</span>,<span class="hljs-string">&quot;a&quot;</span>);
+            System.out.println(<span class="hljs-string">&quot;&#x4EA4;&#x6613;&#x540E;&#xFF1A;&quot;</span>+<span class="hljs-keyword">new</span> String(queryAResultAfter, StandardCharsets.UTF_8));
+</code></pre>
+<p>&#x6700;&#x540E;&#x63A7;&#x5236;&#x53F0;&#x8F93;&#x51FA;&#xFF1A;
+<img src="https://img-blog.csdnimg.cn/20200222225455136.png" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<p>&#x4EA4;&#x6613;&#x6210;&#x529F;&#x3002;</p>
+<h2 id="7-&#x603B;&#x7ED3;">7. &#x603B;&#x7ED3;</h2>
+<p>&#x5728;&#x8C03;&#x7528;&#x4EA4;&#x6613;&#x65B9;&#x9762;&#xFF0C;&#x901A;&#x8FC7;&#x7F51;&#x5173;&#x8FD9;&#x79CD;&#x786E;&#x5B9E;&#x7B80;&#x5355;&#x4E86;&#x5F88;&#x591A;&#xFF0C;&#x540E;&#x9762;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x8FDB;&#x884C;&#x8BBE;&#x8BA1;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x7F51;&#x5173;&#x8FD9;&#x4E2A;&#x5305;&#x5355;&#x72EC;&#x5C01;&#x88C5;&#xFF0C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x518D;&#x8FDB;&#x884C;&#x8C03;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x57FA;&#x4E8E;&#x7F51;&#x5173;&#x8FD9;&#x5C42;&#x4FDD;&#x969C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x4E1A;&#x52A1;&#x7A33;&#x5B9A;&#x6027;&#x3002;&#x800C;&#x518D;&#x521B;&#x5EFA;&#x901A;&#x9053;&#x3001;&#x52A0;&#x5165;&#x901A;&#x9053;&#x3001;&#x90E8;&#x7F72;&#x5408;&#x7EA6;&#x7B49;&#x64CD;&#x4F5C;&#x5E94;&#x8BE5;&#x8FD8;&#x662F;SDK&#x90A3;&#x5957;&#xFF0C;&#x540E;&#x7EED;&#x7AE0;&#x8282;&#x4E5F;&#x5C06;&#x7EE7;&#x7EED;&#x5B9E;&#x8DF5;&#x3002;&#x9700;&#x8981;&#x672C;&#x7AE0;&#x6E90;&#x7801;&#x7684;&#x53EF;&#x4EE5;&#x8BC4;&#x8BBA;&#x7559;&#x8A00;&#x3002;</p>
+<p>&#x6E90;&#x7801;&#xFF1A;<a href="https://github.com/llzz9595/fabricdemo" target="_blank">https://github.com/llzz9595/fabricdemo</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"基于Java SDK实现合约交易","level":"1.5.1","depth":2,"previous":{"title":"SDK实践","level":"1.5","depth":1,"ref":"","articles":[{"title":"基于Java SDK实现合约交易","level":"1.5.1","depth":2,"path":"docs/chap12.md","ref":"docs/chap12.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/chap12.md","mtime":"2020-03-12T03:45:33.887Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-12T03:50:12.376Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
